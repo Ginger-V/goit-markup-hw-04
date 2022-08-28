@@ -187,26 +187,26 @@ color: var(--accent-color--);
 /* main */
 
 .hero {
-padding-top: 200px;
-padding-bottom: 200px;
+max-width: 100%;
 text-align: center;
 align-items: center;
 background-color: #2F303A;
 color: #ffffff;
-margin-bottom: 88px;
-
+margin-bottom: 94px;
+background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url('../images/hero/background.jpg');
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
 }
+
 
 .container-hero {
 max-width: 1600px;
-padding-top: 0;
-padding-bottom: 0;
+padding-top: 200px;
+padding-bottom: 200px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-background-color: #C4C4C4;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4)), (rgba(47, 48, 58, 0.4)), url('../images/hero/background.jpg');
-background-size: cover;
 }
 
 .hero-title {
@@ -264,9 +264,15 @@ padding-bottom: 0;
 
 .container {
 max-width: 1200px;
+gap: 30px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
+}
+
+.pictures {
+display: flex;
+justify-content: center;
 }
 
 /* заголовки до списку особливостей */
@@ -289,6 +295,7 @@ height: 70px;
 
 .section-title {
 font-style: normal;
+text-decoration: none;
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
@@ -305,6 +312,8 @@ background-color: #F5F4FA;
 
 
 .section-title-item {
+display: flex;
+justify-content: center;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -326,6 +335,13 @@ column-gap: 30px;
 .workers-list li{
 flex-basis: calc((100% - 90px)/4);
 background-color: #ffffff;
+}
+
+.employees-box {
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+0px 1px 1px rgba(0, 0, 0, 0.14),
+0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
 }
 
 .employees-content-wrapper {
@@ -425,6 +441,60 @@ color: #ffffff;
 fill: #ffffff;
 }
 
+/*секція наші кліенти*/
+
+
+.clients {
+background-color: #ffffff;
+}
+
+.clients-list {
+display: flex;
+justify-content: center;
+align-items: center;
+column-gap: 30px;
+}
+ 
+.clients-box {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 170px;
+height: 92px;
+gap: 30px;
+margin-top: 50px;
+margin-bottom: 94px;
+padding: 16px 32px;
+box-sizing: border-box;
+border: 1px solid #AFB1B8;
+border-radius: 4px;
+}
+
+.clients-link {
+display: flex;
+align-items: center;
+justify-content: center;
+fill: #AFB1B8;
+}
+
+.clients-icon {
+width: 106px;
+height: 60px;
+}
+
+.clients-box:hover,
+.clients-box:focus {
+cursor: pointer;
+background-color: #ffffff;
+color: var(--accent-color--)
+}
+
+.clients-box:hover .clients-icon,
+.clients-box:focus .clients-icon  {
+fill: var(--accent-color--)
+}
+
+
 /*кнопки на странице портфоліо */
 /*filters*/
 
@@ -475,6 +545,16 @@ flex-wrap: wrap;
 gap: 30px;
 }
 
+.menu-item-card {
+box-sizing: border-box;
+
+}
+
+.menu-item-card:hover {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+0px 4px 4px rgba(0, 0, 0, 0.06),
+1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .button {
 gap: 8px;
@@ -537,6 +617,8 @@ padding-bottom: 60px;
 max-width: 1200px;
 display: flex;
 flex-direction: column;
+margin-left: 215px;
+margin-right: 0;
 }
 
 .webstudio {
@@ -633,3 +715,86 @@ color: var(--accent-color--);
 color: var(--accent-color--);
 }
 
+
+.contact-links {
+width: 206px;
+height: 80px;
+gap: 20px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: auto;
+margin-bottom: auto;
+margin-left: 70px;
+margin-right: auto;
+padding: 0;
+}
+
+
+.footer-icons {
+display: flex;
+flex-direction: row;
+justify-content: baseline;
+margin-left: 500px;
+}
+
+.join-us {
+color: #ffffff;
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+
+.icons-list {
+display: flex;
+justify-content: center;
+column-gap: 10px;
+margin-top: 15px;
+margin-bottom: 30px;
+}
+
+.icons-list-item {
+display: block;
+justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.1);
+background-position: center;
+}
+
+.icons-list-icon {
+width: 20px;
+height: 20px;
+display: flex;
+justify-content: center;
+column-gap: 10px;
+fill: #AFB1B8;
+    
+}
+
+.icons-list-link {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+  
+}
+
+.icons-list-link:hover,
+.icons-list-link:focus {
+cursor: pointer;
+background-color: var(--accent-color--);
+color: #ffffff;
+}
+
+.icons-list-link:hover .icons-list-icon,
+.icons-list-link:focus .icons-list-icon {
+fill: #ffffff;
+}
