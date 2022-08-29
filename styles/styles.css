@@ -136,6 +136,8 @@ padding-bottom: 32px;
 
 
 .contact-mail {
+    display: flex;
+    align-items: center;
 font-style: normal;
 text-decoration: none;
 list-style: none;
@@ -152,10 +154,11 @@ padding-bottom: 32px;
 fill: currentColor;
 margin-left: auto;
 margin-right: 10px;
-padding-top: 2px;
 }
 
 .contact-number {
+    display: flex;
+    align-items: center;
 font-style: normal;
 text-decoration: none;
 list-style: none;
@@ -192,8 +195,9 @@ text-align: center;
 align-items: center;
 background-color: #2F303A;
 color: #ffffff;
-margin-bottom: 94px;
-background-image:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)),url('../images/hero/background.jpg');
+background-image:linear-gradient(rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)),
+url('../images/hero/background.jpg');
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
@@ -255,7 +259,7 @@ color: #2196F3;
 .section {
 background-color: #ffffff;
 padding-top: 94px;
-padding-bottom: 94px;
+padding-bottom: 0;
 }
 
 .characteristics {
@@ -273,6 +277,7 @@ margin: 0 auto;
 .pictures {
 display: flex;
 justify-content: center;
+padding-bottom: 94px;
 }
 
 /* заголовки до списку особливостей */
@@ -308,6 +313,7 @@ margin-bottom: 10px;
 
 .employees {
 background-color: #F5F4FA;
+padding-bottom: 94px;
 }
 
 
@@ -396,8 +402,7 @@ margin-bottom: 16px;
 display: flex;
 justify-content: center;
 column-gap: 10px;
-margin-top: 15px;
-margin-bottom: 30px;
+padding-bottom: 30px;
 }
 
 .social-list-item {
@@ -431,9 +436,7 @@ border-radius: 50%;
 
 .social-list-link:hover,
 .social-list-link:focus {
-cursor: pointer;
 background-color: var(--accent-color--);
-color: #ffffff;
 }
 
 .social-list-link:hover .social-list-icon,
@@ -446,6 +449,7 @@ fill: #ffffff;
 
 .clients {
 background-color: #ffffff;
+padding-bottom: 94px;
 }
 
 .clients-list {
@@ -462,19 +466,34 @@ align-items: center;
 width: 170px;
 height: 92px;
 gap: 30px;
-margin-top: 50px;
-margin-bottom: 94px;
-padding: 16px 32px;
+padding-top: 16px;
+padding-bottom: 16px;
+padding-left: 32px;
+padding-right: 32px;
 box-sizing: border-box;
 border: 1px solid #AFB1B8;
 border-radius: 4px;
 }
 
+.clients-box:hover,
+.clients-box:focus {
+border-color: var(--accent-color--);
+}
+
 .clients-link {
+width: 106px;
+height: 60px;
 display: flex;
 align-items: center;
 justify-content: center;
 fill: #AFB1B8;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+    cursor: pointer;
+background-color: #ffffff;
+    color: var(--accent-color--);
 }
 
 .clients-icon {
@@ -491,7 +510,7 @@ color: var(--accent-color--)
 
 .clients-box:hover .clients-icon,
 .clients-box:focus .clients-icon  {
-fill: var(--accent-color--)
+fill: var(--accent-color--);
 }
 
 
@@ -513,13 +532,11 @@ padding: 6px 25px;
 
 .headup_hover:hover,
 .headup_hover:focus {
-cursor: pointer;
 background-color: #2196F3;
 color: #ffffff;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
 0px 1px 2px rgba(0, 0, 0, 0.08),
 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
 }
 
 
@@ -547,10 +564,16 @@ gap: 30px;
 
 .menu-item-card {
 box-sizing: border-box;
-
 }
 
-.menu-item-card:hover {
+
+.item-card {
+    display: block;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+.item-card:hover {
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 0px 4px 4px rgba(0, 0, 0, 0.06),
 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -614,11 +637,7 @@ padding-bottom: 60px;
 }
 
 .page-footer-container {
-max-width: 1200px;
-display: flex;
-flex-direction: column;
-margin-left: 215px;
-margin-right: 0;
+
 }
 
 .webstudio {
@@ -717,20 +736,11 @@ color: var(--accent-color--);
 
 
 .contact-links {
-width: 206px;
-height: 80px;
 gap: 20px;
 display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-top: auto;
-margin-bottom: auto;
 margin-left: 70px;
-margin-right: auto;
-padding: 0;
 }
-
 
 .footer-icons {
 display: flex;
@@ -746,15 +756,15 @@ font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.03em;
+align-items: center;
 text-transform: uppercase;
+margin-bottom: 20px;
 }
 
 .icons-list {
 display: flex;
 justify-content: center;
 column-gap: 10px;
-margin-top: 15px;
-margin-bottom: 30px;
 }
 
 .icons-list-item {
@@ -773,8 +783,7 @@ height: 20px;
 display: flex;
 justify-content: center;
 column-gap: 10px;
-fill: #AFB1B8;
-    
+fill: #ffffff;
 }
 
 .icons-list-link {
