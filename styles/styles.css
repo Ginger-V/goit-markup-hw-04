@@ -469,9 +469,6 @@ border-radius: 4px;
 
 .clients-link:hover,
 .clients-link:focus {
-cursor: pointer;
-background-color: #ffffff;
-color: var(--accent-color--);
 border-color: var(--accent-color--);
 fill: var(--accent-color--);
 }
@@ -623,7 +620,6 @@ font-style: normal;
 .footer-icons {
 display: flex;
 flex-direction: row;
-margin-left: 500px;
 }
 
 .webstudio {
@@ -666,6 +662,9 @@ margin-bottom: 20px;
 
 .contact-panel {
 font-style: normal;
+display: flex;
+flex-direction: column;
+gap: 9px;
 }
 
 
